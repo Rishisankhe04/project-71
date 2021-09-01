@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <title>St. Xavier</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+
+    <!--
+Navigation bar code here
+-->
+    <nav class="navbar-inverse my_nav_bar">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+            <a class="navbar-brand" href="#">St. Xavier School</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li><a href="#welcome">School name</a></li>
+                <li><a href="#bio">Campus Life</a></li>
+                <li><a href="#what's new">What's new!</a></li>
+                <li><a href="#alumni">Alumni</a></li>
+                <li><a href="#contact">Contact us</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="announcement">
+        <marquee id="marqueestyle" onmouseover="this.stop()" onmouseout="this.start()">
+            *** Feel free to ask queries on school@gmail.com ***
+        </marquee>
+    </div>
+
+    <img id="welcome" src="st.xavier.jpg"><br><br>
+
+    <div id="bio">
+        <div>
+            <center>
+                <div>
+                    <span>
+                        <img class="img-responsive" src="auditorium.jfif" width="300px" height="200px" style="border-width:5px; border-style:solid; padding-top:2px; padding-bottom:2px; padding-left:2px; padding-right:2px;">
+                        <br><br>
+                        <kbd style="border-width:5px; border-style:solid;">Auditorium</kbd>
+                        <br><br>
+                    </span>
+                    <hr>
+                    <span>
+                        <img class="img-responsive" src="library.jfif" width="300px" height="200px" style="border-width:5px; border-style:solid; padding-top:2px; padding-bottom:2px; padding-left:2px; padding-right:2px;">
+                        <br><br>
+                        <kbd style="border-width:5px; border-style:solid;">Library</kbd>
+                        <br><br>
+                    </span>
+                    <hr>
+                    <span>
+                        <img class="img-responsive" src="class.jpg" width="300px" height="200px" style="border-width:5px; border-style:solid; padding-top:2px; padding-bottom:2px; padding-left:2px; padding-right:2px;">
+                        <br><br>
+                        <kbd style="border-width:5px; border-style:solid;">class</kbd><br><br>
+                    </span>
+                </div>
+            </center>
+        </div>
+    </div>
+
+    <div id="what's new" style="padding-bottom:30px;">
+        <h2>What's New!</h2>
+        <h4 class="list-group-item-success" style="width:500px;">New School Canteen</h4>
+        <img class="img-responsive col-lg-7 col-md-7 col-sm-7 col-xs-12" src="canteen.jfif" style="height:600px; width:500px; padding-bottom:20px;">
+        <h4 class="list-group-item-success" style="width:500px;">Implemented Online Attendance Management System</h4>
+        <img class="img-responsive col-lg-7 col-md-7 col-sm-7 col-xs-12" src="attendance.jfif" style="height:600px; width:500px;">
+    </div>
+    
+    <div class="page-header col-lg-12 col-md-12 col-sm-12 col-xs-12" id="alumni">
+    <h2 class="text-capitalize">Famous Alumni</h2>
+    </div>
+            <div class="alumni col-lg-12 col-md-12 col-sm-12 col-xs-12" data-toggle="modal" data-target="#alumni">
+    <img id="alumni1" src="messi.jfif" class="img-responsive" style="height:277px; width:217px;" style="margin-bottom: 0px; margin-top:0px; margin-left:0px; margin-right:0px;"><hr>
+                <div class="text-primary" style="text-align:left; padding-bottom:25px;">Lionel Messi</div>
+                
+    <div class="modal fade" id="messi">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Lionel Messi</h4>
+            </div>
+            <div class="modal-body">
+            <img src="messi.jfif" class="img-responsive img-modal">
+                <p class="p_modal">Lionel Andrés Messi, also known as Leo Messi, is an Argentine professional footballer who plays as a forward for Ligue 1 club Paris Saint-Germain and captains the Argentina national team.<br>
+                <a href="https://www.google.com/search?q=lionel+messi&rlz=1C1CHBF_enIN929IN929&hl=en-GB&sxsrf=AOaemvI6Uz0CinoFhAimEK8-9_2Z12d-Cg%3A1630423309725&ei=DUkuYdvdK9Dcz7sP6JKt0AE&oq=lionel+messi&gs_lcp=Cgdnd3Mtd2l6EAMyCggAELEDELADEEMyCwgAELEDELADEJECMggIABCwAxCRAjINCC4QyAMQsAMQQxCTAjIKCC4QyAMQsAMQQzIKCC4QyAMQsAMQQzIKCC4QyAMQsAMQQzIKCC4QyAMQsAMQQzIKCC4QyAMQsAMQQ0oFCDgSATFKBAhBGAFQAFgAYOC_GWgBcAB4AIABAIgBAJIBAJgBAMgBCcABAQ&sclient=gws-wiz&ved=0ahUKEwibmNaRyNvyAhVQ7nMBHWhJCxoQ4dUDCA8&uact=5"><b>See him</b></a>
+                </p>
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>&nbsp;&nbsp;&nbsp;
+    
+    <div class="alumni col-lg-12 col-md-12 col-sm-12 col-xs-12" data-toggle="modal" data-target="#alumni">
+    <img id="alumni2" src="cr7.jpg_background=000000&cropX1=1321&cropX2=3300&cropY1=114&cropY2=2093" class="img-responsive" style="height:277px; width:217px;" style="margin-bottom: 0px; margin-top:0px; margin-left:0px; margin-right:0px;"><hr>
+                <div class="text-primary" style="text-align:left;">Cristiano Ronaldo</div>
+        
+        <div class="modal fade" id="ronaldo">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Cristiano Ronaldo</h4>
+            </div>
+            <div class="modal-body">
+            <img src="cr7.jpg_background=000000&cropX1=1321&cropX2=3300&cropY1=114&cropY2=2093" class="img-responsive img-modal">
+                <p class="p_modal">Cristiano Ronaldo dos Santos Aveiro GOIH ComM is a Portuguese professional footballer who plays as a forward for Premier League club Manchester United and captains the Portugal national team.<br>
+                <a href="https://www.google.com/search?q=cristiano+ronaldo&source=lmns&rlz=1C1CHBF_enIN929IN929&hl=en-GB&sa=X&ved=2ahUKEwjiqJ2P1d3yAhXJKrcAHXP_BV4Q_AUoAHoECAEQAA"><b>See him</b></a>
+                </p>
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
+    
+    <div id="contact">
+        <h3 class="text-group-item-success">Contact Us</h3><br><br>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d120384.25896288159!2d72.72853361955906!3d19.455217899999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7aa28ca2ca897%3A0x8ae3f6a5fc33fd9e!2sSt%20Xavier&#39;s%20High%20School%2C%20Virar%20West!5e0!3m2!1sen!2sin!4v1629817943754!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+</body>
+
+</html>
